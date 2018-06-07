@@ -115,5 +115,20 @@ public class Triagem {
         this.febre = febre;
     }
    
+   private float calcularImc(float peso, float altura){
+       float imc;
+       imc = (peso)/(altura*altura);
+       
+       return imc;
+   } 
+
+    @Override
+    public String toString() {
+        return "Triagem{" + "enfermeira=" + enfermeira + ", paciente=" + paciente + 
+               "\n"+", pressao=" + pressao + ", temperatura=" + temperatura + 
+                "\n" + ", sintomas=" + sintomas + ", alergias=" + alergias + 
+                "\n"+", peso=" + peso + ", altura=" + altura + ", imc=" + imc + ", febre=" + febre + '}';
+    }
+   
    
 }
