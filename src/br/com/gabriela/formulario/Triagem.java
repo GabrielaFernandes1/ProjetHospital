@@ -27,17 +27,191 @@ public class Triagem extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLblEnf = new javax.swing.JLabel();
+        jLblPac = new javax.swing.JLabel();
+        jLblPressao = new javax.swing.JLabel();
+        jLblTemp = new javax.swing.JLabel();
+        jLblSintomas = new javax.swing.JLabel();
+        jLblAlergia = new javax.swing.JLabel();
+        jLblPeso = new javax.swing.JLabel();
+        jLbAltura = new javax.swing.JLabel();
+        jLblImc = new javax.swing.JLabel();
+        jLblFebre = new javax.swing.JLabel();
+        jTxtEnf = new javax.swing.JTextField();
+        jTxtPac = new javax.swing.JTextField();
+        jTxtPressao = new javax.swing.JTextField();
+        jTxtTemperatura = new javax.swing.JTextField();
+        jTxtSintomas = new javax.swing.JTextField();
+        jTxtPeso = new javax.swing.JTextField();
+        jTxtImc = new javax.swing.JTextField();
+        jTxtfebre = new javax.swing.JTextField();
+        jTxtAlergias = new javax.swing.JTextField();
+        jTxtAltura = new javax.swing.JTextField();
+        jBtnSalvar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 153, 153));
+        jLabel1.setText("Triagem");
+
+        jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
+
+        jLblEnf.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblEnf.setText("Enfermeira:");
+
+        jLblPac.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblPac.setText("Paciente:");
+
+        jLblPressao.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblPressao.setText("Pressão:");
+
+        jLblTemp.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblTemp.setText("Temperatura:");
+
+        jLblSintomas.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblSintomas.setText("Sintomas:");
+
+        jLblAlergia.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblAlergia.setText("Alergias:");
+
+        jLblPeso.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblPeso.setText("Peso:");
+
+        jLbAltura.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLbAltura.setText("Altura:");
+
+        jLblImc.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblImc.setText("IMC:");
+
+        jLblFebre.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLblFebre.setText("Febre:");
+
+        jTxtEnf.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtPac.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtPressao.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtTemperatura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtSintomas.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtPeso.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtImc.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtfebre.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtAlergias.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jTxtAltura.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+
+        jBtnSalvar.setText("Salvar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jSeparator1)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLblTemp)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTxtTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLblFebre)
+                        .addGap(18, 18, 18)
+                        .addComponent(jTxtfebre, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLblImc)
+                                    .addComponent(jLblPeso)
+                                    .addComponent(jLblSintomas))
+                                .addGap(33, 33, 33)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jTxtSintomas, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jTxtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(30, 30, 30)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLblAlergia)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(jTxtAlergias, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(jLbAltura)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jBtnSalvar)
+                                                    .addComponent(jTxtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(jTxtImc, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(136, 136, 136)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLblEnf)
+                                    .addComponent(jLblPac)
+                                    .addComponent(jLblPressao))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jTxtPressao, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtPac, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTxtEnf, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblEnf)
+                    .addComponent(jTxtEnf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblPac)
+                    .addComponent(jTxtPac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblPressao)
+                    .addComponent(jTxtPressao, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblTemp)
+                    .addComponent(jLblFebre)
+                    .addComponent(jTxtTemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtfebre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblSintomas)
+                    .addComponent(jLblAlergia)
+                    .addComponent(jTxtSintomas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtAlergias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblPeso)
+                    .addComponent(jLbAltura)
+                    .addComponent(jTxtPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLblImc)
+                    .addComponent(jTxtImc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBtnSalvar))
+                .addGap(24, 24, 24))
         );
 
         pack();
@@ -79,5 +253,28 @@ public class Triagem extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jBtnSalvar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLbAltura;
+    private javax.swing.JLabel jLblAlergia;
+    private javax.swing.JLabel jLblEnf;
+    private javax.swing.JLabel jLblFebre;
+    private javax.swing.JLabel jLblImc;
+    private javax.swing.JLabel jLblPac;
+    private javax.swing.JLabel jLblPeso;
+    private javax.swing.JLabel jLblPressao;
+    private javax.swing.JLabel jLblSintomas;
+    private javax.swing.JLabel jLblTemp;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JTextField jTxtAlergias;
+    private javax.swing.JTextField jTxtAltura;
+    private javax.swing.JTextField jTxtEnf;
+    private javax.swing.JTextField jTxtImc;
+    private javax.swing.JTextField jTxtPac;
+    private javax.swing.JTextField jTxtPeso;
+    private javax.swing.JTextField jTxtPressao;
+    private javax.swing.JTextField jTxtSintomas;
+    private javax.swing.JTextField jTxtTemperatura;
+    private javax.swing.JTextField jTxtfebre;
     // End of variables declaration//GEN-END:variables
 }

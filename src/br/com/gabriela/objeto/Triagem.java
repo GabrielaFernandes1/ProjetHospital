@@ -121,6 +121,9 @@ public class Triagem {
        
        return imc;
    } 
+   
+   
+   
 
     @Override
     public String toString() {
