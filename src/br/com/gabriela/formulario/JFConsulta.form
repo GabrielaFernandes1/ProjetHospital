@@ -29,7 +29,7 @@
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jSeparator1" min="-2" pref="427" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
@@ -37,42 +37,42 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Group type="102" attributes="0">
-                                  <Component id="jLblAtestado" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLAtestado" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jTxtAtestado" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jTAtestado" min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jLblDiagnostico" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLDiagnostico" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jTxtDiagnostico" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jTDiagnostico" min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jLblMedicamentos" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jTxtMedicamentos" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jTMedicamentos" min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jLblMedico" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLMedicoTriagem" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jTxtMedico" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jTMedicoTriagem" min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
-                                  <Component id="jLblTriagem" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLTriagem" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                                  <Component id="jTxtTriagem" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jTTriagem" min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLblCodigoDiagnostico" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLCodigoDiagnostico" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="jTxtCodigoDiagnostico" min="-2" pref="118" max="-2" attributes="0"/>
+                              <Component id="jTCodigoDiagnostico" min="-2" pref="118" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                              <Component id="jBtnSalvar" min="-2" max="-2" attributes="0"/>
+                              <Component id="jBSalvar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="204" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,34 +85,34 @@
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
               <EmptySpace pref="41" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblMedico" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMedico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLMedicoTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTMedicoTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLblMedicamentos" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtMedicamentos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTMedicamentos" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jTxtAtestado" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLblAtestado" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTAtestado" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLAtestado" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblCodigoDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtCodigoDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLCodigoDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTCodigoDiagnostico" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jBSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
           </Group>
@@ -135,7 +135,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblTriagem">
+    <Component class="javax.swing.JLabel" name="jLTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -143,7 +143,7 @@
         <Property name="text" type="java.lang.String" value="Triagem:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblMedico">
+    <Component class="javax.swing.JLabel" name="jLMedicoTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -159,7 +159,7 @@
         <Property name="text" type="java.lang.String" value="Medicamentos:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblDiagnostico">
+    <Component class="javax.swing.JLabel" name="jLDiagnostico">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -167,7 +167,7 @@
         <Property name="text" type="java.lang.String" value="Diagnostico:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblAtestado">
+    <Component class="javax.swing.JLabel" name="jLAtestado">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -175,7 +175,7 @@
         <Property name="text" type="java.lang.String" value="Atestado:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblCodigoDiagnostico">
+    <Component class="javax.swing.JLabel" name="jLCodigoDiagnostico">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -183,49 +183,49 @@
         <Property name="text" type="java.lang.String" value="C&#xf3;digo Diagnostico:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtTriagem">
+    <Component class="javax.swing.JTextField" name="jTTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMedicamentos">
+    <Component class="javax.swing.JTextField" name="jTMedicamentos">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtMedico">
+    <Component class="javax.swing.JTextField" name="jTMedicoTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtDiagnostico">
+    <Component class="javax.swing.JTextField" name="jTDiagnostico">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtCodigoDiagnostico">
+    <Component class="javax.swing.JTextField" name="jTCodigoDiagnostico">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtAtestado">
+    <Component class="javax.swing.JTextField" name="jTAtestado">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnSalvar">
+    <Component class="javax.swing.JButton" name="jBSalvar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>

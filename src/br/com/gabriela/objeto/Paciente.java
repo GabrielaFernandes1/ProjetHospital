@@ -13,9 +13,14 @@ import java.util.Date;
  */
 public class Paciente extends Pessoa {
 
-   private int id;
+   private long id;
    private int numeroSus;
    private Pessoa responsavel;
+
+    @Override
+    public String toString() {
+        return "Paciente{" + "id=" + id + ", numeroSus=" + numeroSus + ", responsavel=" + responsavel + '}';
+    }
   
    
 
@@ -23,13 +28,14 @@ public class Paciente extends Pessoa {
         super(nome, dataNascimento, cpf, rg, endereco, telefone, estadoCivil, sexo);
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
+
 
     public int getNumeroSus() {
         return numeroSus;

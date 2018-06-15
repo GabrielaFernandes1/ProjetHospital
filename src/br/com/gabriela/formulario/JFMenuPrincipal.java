@@ -9,12 +9,12 @@ package br.com.gabriela.formulario;
  *
  * @author SATC
  */
-public class Principal extends javax.swing.JFrame {
+public class JFMenuPrincipal extends javax.swing.JFrame {
 
     /**
      * Creates new form Principal
      */
-    public Principal() {
+    public JFMenuPrincipal() {
         initComponents();
     }
 
@@ -29,21 +29,17 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem = new javax.swing.JMenu();
         jMAtestado = new javax.swing.JMenuItem();
-        jMCadastroPessoa = new javax.swing.JMenuItem();
         jMConsulta = new javax.swing.JMenuItem();
+        jMTriagem = new javax.swing.JMenuItem();
+        jMenuItem = new javax.swing.JMenu();
         jMEnfermeira = new javax.swing.JMenuItem();
         jMMedico = new javax.swing.JMenuItem();
         jMPaciente = new javax.swing.JMenuItem();
-        jMTriagem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu3.setText("File");
-        jMenuBar2.add(jMenu3);
-
-        jMenuItem.setText("Edit");
+        jMenu3.setText("Procedimento");
 
         jMAtestado.setText("Atestado");
         jMAtestado.addActionListener(new java.awt.event.ActionListener() {
@@ -51,15 +47,7 @@ public class Principal extends javax.swing.JFrame {
                 jMAtestadoActionPerformed(evt);
             }
         });
-        jMenuItem.add(jMAtestado);
-
-        jMCadastroPessoa.setText("Cadastrar Pessoa");
-        jMCadastroPessoa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMCadastroPessoaActionPerformed(evt);
-            }
-        });
-        jMenuItem.add(jMCadastroPessoa);
+        jMenu3.add(jMAtestado);
 
         jMConsulta.setText("Consulta");
         jMConsulta.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +55,19 @@ public class Principal extends javax.swing.JFrame {
                 jMConsultaActionPerformed(evt);
             }
         });
-        jMenuItem.add(jMConsulta);
+        jMenu3.add(jMConsulta);
+
+        jMTriagem.setText("Triagem");
+        jMTriagem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMTriagemActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMTriagem);
+
+        jMenuBar2.add(jMenu3);
+
+        jMenuItem.setText("Cadastrar");
 
         jMEnfermeira.setText("Enfermeira");
         jMEnfermeira.addActionListener(new java.awt.event.ActionListener() {
@@ -93,14 +93,6 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenuItem.add(jMPaciente);
 
-        jMTriagem.setText("Triagem");
-        jMTriagem.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMTriagemActionPerformed(evt);
-            }
-        });
-        jMenuItem.add(jMTriagem);
-
         jMenuBar2.add(jMenuItem);
 
         setJMenuBar(jMenuBar2);
@@ -120,37 +112,32 @@ public class Principal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMAtestadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMAtestadoActionPerformed
-        Atestado atestado= new Atestado();
+        JFAtestado atestado= new JFAtestado();
         atestado.setVisible(true);
     }//GEN-LAST:event_jMAtestadoActionPerformed
 
-    private void jMCadastroPessoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMCadastroPessoaActionPerformed
-        Pessoa pessoa = new Pessoa();
-        pessoa.setVisible(true);
-    }//GEN-LAST:event_jMCadastroPessoaActionPerformed
-
     private void jMConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMConsultaActionPerformed
-        Consulta consulta = new Consulta();
+        JFConsulta consulta = new JFConsulta();
         consulta.setVisible(true);
     }//GEN-LAST:event_jMConsultaActionPerformed
 
     private void jMEnfermeiraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMEnfermeiraActionPerformed
-        Enfermeira enfermeira = new Enfermeira();
+        JFEnfermeira enfermeira = new JFEnfermeira();
         enfermeira.setVisible(true);
     }//GEN-LAST:event_jMEnfermeiraActionPerformed
 
     private void jMMedicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMMedicoActionPerformed
-        Medico medico = new Medico();
+        JFMedico medico = new JFMedico();
         medico.setVisible(true);
     }//GEN-LAST:event_jMMedicoActionPerformed
 
     private void jMPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMPacienteActionPerformed
-        Paciente paciente = new Paciente();
+        JFPaciente paciente = new JFPaciente();
         paciente.setVisible(true);
     }//GEN-LAST:event_jMPacienteActionPerformed
 
     private void jMTriagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMTriagemActionPerformed
-        Triagem triagem = new Triagem();
+        JFTriagem triagem = new JFTriagem();
         triagem.setVisible(true);
     }//GEN-LAST:event_jMTriagemActionPerformed
 
@@ -171,27 +158,27 @@ public class Principal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Principal().setVisible(true);
+                new JFMenuPrincipal().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem jMAtestado;
-    private javax.swing.JMenuItem jMCadastroPessoa;
     private javax.swing.JMenuItem jMConsulta;
     private javax.swing.JMenuItem jMEnfermeira;
     private javax.swing.JMenuItem jMMedico;

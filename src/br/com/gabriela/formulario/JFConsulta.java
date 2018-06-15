@@ -5,17 +5,21 @@
  */
 package br.com.gabriela.formulario;
 
+import br.com.gabriela.singleton.SMedico;
+
 /**
  *
  * @author SATC
  */
-public class Consulta extends javax.swing.JFrame {
+public class JFConsulta extends javax.swing.JFrame {
 
     /**
      * Creates new form Consulta
      */
-    public Consulta() {
+    public JFConsulta() {
         initComponents();
+        jTMedicoTriagem.setText(Integer.toString(SMedico.getInstance().getMedicos().size()));
+        jTMedicoTriagem.setEnabled(false);
     }
 
     /**
@@ -29,19 +33,19 @@ public class Consulta extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLblTriagem = new javax.swing.JLabel();
-        jLblMedico = new javax.swing.JLabel();
+        jLTriagem = new javax.swing.JLabel();
+        jLMedicoTriagem = new javax.swing.JLabel();
         jLblMedicamentos = new javax.swing.JLabel();
-        jLblDiagnostico = new javax.swing.JLabel();
-        jLblAtestado = new javax.swing.JLabel();
-        jLblCodigoDiagnostico = new javax.swing.JLabel();
-        jTxtTriagem = new javax.swing.JTextField();
-        jTxtMedicamentos = new javax.swing.JTextField();
-        jTxtMedico = new javax.swing.JTextField();
-        jTxtDiagnostico = new javax.swing.JTextField();
-        jTxtCodigoDiagnostico = new javax.swing.JTextField();
-        jTxtAtestado = new javax.swing.JTextField();
-        jBtnSalvar = new javax.swing.JButton();
+        jLDiagnostico = new javax.swing.JLabel();
+        jLAtestado = new javax.swing.JLabel();
+        jLCodigoDiagnostico = new javax.swing.JLabel();
+        jTTriagem = new javax.swing.JTextField();
+        jTMedicamentos = new javax.swing.JTextField();
+        jTMedicoTriagem = new javax.swing.JTextField();
+        jTDiagnostico = new javax.swing.JTextField();
+        jTCodigoDiagnostico = new javax.swing.JTextField();
+        jTAtestado = new javax.swing.JTextField();
+        jBSalvar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,37 +54,37 @@ public class Consulta extends javax.swing.JFrame {
 
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
 
-        jLblTriagem.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLblTriagem.setText("Triagem:");
+        jLTriagem.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLTriagem.setText("Triagem:");
 
-        jLblMedico.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLblMedico.setText("Médico:");
+        jLMedicoTriagem.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLMedicoTriagem.setText("Médico:");
 
         jLblMedicamentos.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLblMedicamentos.setText("Medicamentos:");
 
-        jLblDiagnostico.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLblDiagnostico.setText("Diagnostico:");
+        jLDiagnostico.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLDiagnostico.setText("Diagnostico:");
 
-        jLblAtestado.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLblAtestado.setText("Atestado:");
+        jLAtestado.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLAtestado.setText("Atestado:");
 
-        jLblCodigoDiagnostico.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-        jLblCodigoDiagnostico.setText("Código Diagnostico:");
+        jLCodigoDiagnostico.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLCodigoDiagnostico.setText("Código Diagnostico:");
 
-        jTxtTriagem.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTTriagem.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jTxtMedicamentos.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTMedicamentos.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jTxtMedico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTMedicoTriagem.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jTxtDiagnostico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTDiagnostico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jTxtCodigoDiagnostico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTCodigoDiagnostico.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jTxtAtestado.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTAtestado.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
-        jBtnSalvar.setText("Salvar");
+        jBSalvar.setText("Salvar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,7 +95,7 @@ public class Consulta extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 10, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
@@ -99,32 +103,32 @@ public class Consulta extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLblAtestado)
+                                    .addComponent(jLAtestado)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTxtAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLblDiagnostico)
+                                    .addComponent(jLDiagnostico)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTxtDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLblMedicamentos)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTxtMedicamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTMedicamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLblMedico)
+                                    .addComponent(jLMedicoTriagem)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTxtMedico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTMedicoTriagem, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLblTriagem)
+                                    .addComponent(jLTriagem)
                                     .addGap(77, 77, 77)
-                                    .addComponent(jTxtTriagem, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(jTTriagem, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLblCodigoDiagnostico)
+                                .addComponent(jLCodigoDiagnostico)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jTxtCodigoDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTCodigoDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(107, 107, 107)
-                                .addComponent(jBtnSalvar)))))
-                .addGap(204, 204, 204))
+                                .addComponent(jBSalvar)))))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -135,29 +139,29 @@ public class Consulta extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLblTriagem)
-                    .addComponent(jTxtTriagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLTriagem)
+                    .addComponent(jTTriagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLblMedico)
-                    .addComponent(jTxtMedico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLMedicoTriagem)
+                    .addComponent(jTMedicoTriagem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLblMedicamentos)
-                    .addComponent(jTxtMedicamentos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTMedicamentos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLblDiagnostico)
-                    .addComponent(jTxtDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLDiagnostico)
+                    .addComponent(jTDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLblAtestado))
+                    .addComponent(jTAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLAtestado))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLblCodigoDiagnostico)
-                    .addComponent(jTxtCodigoDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jBtnSalvar))
+                    .addComponent(jLCodigoDiagnostico)
+                    .addComponent(jTCodigoDiagnostico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBSalvar))
                 .addGap(17, 17, 17))
         );
 
@@ -181,39 +185,40 @@ public class Consulta extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Consulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFConsulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Consulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFConsulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Consulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFConsulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Consulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFConsulta.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Consulta().setVisible(true);
+                new JFConsulta().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jBtnSalvar;
+    private javax.swing.JButton jBSalvar;
+    private javax.swing.JLabel jLAtestado;
+    private javax.swing.JLabel jLCodigoDiagnostico;
+    private javax.swing.JLabel jLDiagnostico;
+    private javax.swing.JLabel jLMedicoTriagem;
+    private javax.swing.JLabel jLTriagem;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLblAtestado;
-    private javax.swing.JLabel jLblCodigoDiagnostico;
-    private javax.swing.JLabel jLblDiagnostico;
     private javax.swing.JLabel jLblMedicamentos;
-    private javax.swing.JLabel jLblMedico;
-    private javax.swing.JLabel jLblTriagem;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTxtAtestado;
-    private javax.swing.JTextField jTxtCodigoDiagnostico;
-    private javax.swing.JTextField jTxtDiagnostico;
-    private javax.swing.JTextField jTxtMedicamentos;
-    private javax.swing.JTextField jTxtMedico;
-    private javax.swing.JTextField jTxtTriagem;
+    private javax.swing.JTextField jTAtestado;
+    private javax.swing.JTextField jTCodigoDiagnostico;
+    private javax.swing.JTextField jTDiagnostico;
+    private javax.swing.JTextField jTMedicamentos;
+    private javax.swing.JTextField jTMedicoTriagem;
+    private javax.swing.JTextField jTTriagem;
     // End of variables declaration//GEN-END:variables
 }

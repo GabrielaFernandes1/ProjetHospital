@@ -28,49 +28,55 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLblTemp" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jTxtTemperatura" min="-2" pref="98" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLblFebre" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jTxtfebre" min="-2" pref="98" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLImc" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLPeso" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLSintomas" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTImc" min="-2" pref="98" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jTSintomas" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jTPeso" min="-2" pref="98" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLAltura" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Component id="jBSalvar" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jTAltura" alignment="1" min="-2" pref="98" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLFebre" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jTfebre" min="-2" pref="98" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLAlergia" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="jTAlergias" min="-2" pref="98" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="45" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLblImc" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLblPeso" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLblSintomas" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jTxtSintomas" min="-2" pref="98" max="-2" attributes="0"/>
-                                          <Component id="jTxtPeso" min="-2" pref="98" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <Component id="jLblAlergia" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Component id="jTxtAlergias" min="-2" pref="98" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Component id="jLbAltura" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace max="32767" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jBtnSalvar" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jTxtAltura" min="-2" pref="98" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                      </Group>
-                                  </Group>
-                                  <Component id="jTxtImc" min="-2" pref="98" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="jLTemp" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jTTemperatura" min="-2" pref="98" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
@@ -78,19 +84,19 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLblEnf" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLblPac" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLblPressao" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLEnferTriagem" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLPacTriagem" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLPressao" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jTxtPressao" min="-2" pref="98" max="-2" attributes="0"/>
-                                  <Component id="jTxtPac" min="-2" pref="98" max="-2" attributes="0"/>
-                                  <Component id="jTxtEnf" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jTPressao" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jTPacTriagem" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jTEnfTriagem" min="-2" pref="98" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -103,47 +109,58 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="9" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblEnf" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtEnf" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLEnferTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTEnfTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblPac" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtPac" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLPacTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTPacTriagem" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblPressao" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtPressao" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLPressao" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTPressao" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblTemp" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLblFebre" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtTemperatura" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtfebre" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblSintomas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLblAlergia" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtSintomas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtAlergias" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblPeso" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLbAltura" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtPeso" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtAltura" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLblImc" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTxtImc" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jBtnSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLTemp" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jTTemperatura" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jTfebre" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLSintomas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLAlergia" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTSintomas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTAlergias" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLAltura" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTAltura" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLImc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jTImc" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jBSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jLFebre" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
           </Group>
@@ -169,7 +186,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblEnf">
+    <Component class="javax.swing.JLabel" name="jLEnferTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -177,7 +194,7 @@
         <Property name="text" type="java.lang.String" value="Enfermeira:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblPac">
+    <Component class="javax.swing.JLabel" name="jLPacTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -185,7 +202,7 @@
         <Property name="text" type="java.lang.String" value="Paciente:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblPressao">
+    <Component class="javax.swing.JLabel" name="jLPressao">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -193,7 +210,7 @@
         <Property name="text" type="java.lang.String" value="Press&#xe3;o:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblTemp">
+    <Component class="javax.swing.JLabel" name="jLTemp">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -201,7 +218,7 @@
         <Property name="text" type="java.lang.String" value="Temperatura:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblSintomas">
+    <Component class="javax.swing.JLabel" name="jLSintomas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -209,7 +226,7 @@
         <Property name="text" type="java.lang.String" value="Sintomas:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblAlergia">
+    <Component class="javax.swing.JLabel" name="jLAlergia">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -217,7 +234,7 @@
         <Property name="text" type="java.lang.String" value="Alergias:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblPeso">
+    <Component class="javax.swing.JLabel" name="jLPeso">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -225,7 +242,7 @@
         <Property name="text" type="java.lang.String" value="Peso:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLbAltura">
+    <Component class="javax.swing.JLabel" name="jLAltura">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -233,7 +250,7 @@
         <Property name="text" type="java.lang.String" value="Altura:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblImc">
+    <Component class="javax.swing.JLabel" name="jLImc">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -241,7 +258,7 @@
         <Property name="text" type="java.lang.String" value="IMC:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLblFebre">
+    <Component class="javax.swing.JLabel" name="jLFebre">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="1"/>
@@ -249,80 +266,83 @@
         <Property name="text" type="java.lang.String" value="Febre:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtEnf">
+    <Component class="javax.swing.JTextField" name="jTEnfTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtPac">
+    <Component class="javax.swing.JTextField" name="jTPacTriagem">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtPressao">
+    <Component class="javax.swing.JTextField" name="jTPressao">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtTemperatura">
+    <Component class="javax.swing.JTextField" name="jTTemperatura">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtSintomas">
+    <Component class="javax.swing.JTextField" name="jTSintomas">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtPeso">
+    <Component class="javax.swing.JTextField" name="jTPeso">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtImc">
+    <Component class="javax.swing.JTextField" name="jTImc">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtfebre">
+    <Component class="javax.swing.JTextField" name="jTfebre">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtAlergias">
+    <Component class="javax.swing.JTextField" name="jTAlergias">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTxtAltura">
+    <Component class="javax.swing.JTextField" name="jTAltura">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="14" style="0"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jBtnSalvar">
+    <Component class="javax.swing.JButton" name="jBSalvar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salvar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBSalvarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

@@ -122,7 +122,12 @@ public class Triagem {
        return imc;
    } 
    
-   
+    private Boolean diagnosticarFebre(float temperatura){
+        if (temperatura >= 37.8) {
+            
+        }
+         return febre = true;  
+    }
    
 
     @Override
