@@ -5,9 +5,14 @@
  */
 package br.com.gabriela.formulario;
 
+import br.com.gabriela.objeto.Enfermeira;
+import br.com.gabriela.objeto.Paciente;
 import br.com.gabriela.objeto.Triagem;
 import br.com.gabriela.singleton.SEnfermeira;
 import br.com.gabriela.singleton.SPaciente;
+import br.com.gabriela.singleton.STriagem;
+import java.util.List;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -20,8 +25,6 @@ public class JFTriagem extends javax.swing.JFrame {
      */
     public JFTriagem() {
         initComponents();
-        jTPacTriagem.setText(Integer.toString(SPaciente.getInstance().getPacientes().size()-1));
-        jTPacTriagem.setEnabled(false);
         jTfebre.setEnabled(false);
         jTImc.setEnabled(false);
         
@@ -60,7 +63,7 @@ public class JFTriagem extends javax.swing.JFrame {
         jTAltura = new javax.swing.JTextField();
         jBSalvar = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 153, 153));
@@ -101,6 +104,11 @@ public class JFTriagem extends javax.swing.JFrame {
         jTEnfTriagem.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
         jTPacTriagem.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTPacTriagem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTPacTriagemActionPerformed(evt);
+            }
+        });
 
         jTPressao.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
 
@@ -241,13 +249,27 @@ public class JFTriagem extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSalvarActionPerformed
-        for(int i =0; i<SEnfermeira.getInstance().getEnfermeiras().size(); i++){
-          jTEnfTriagem.getText(); 
-          jTEnfTriagem.setEnabled(false);
-     }    
-              
-                
+        Triagem tri = null;     
+        int codigoPaciente = Integer.parseInt(jTPacTriagem.getText());
+        Paciente paciente = SPaciente.getInstance().getPacientes().get(codigoPaciente);
+        int codigoEnfermeira = Integer.parseInt(jTEnfTriagem.getText());
+        Enfermeira enfermeira = SEnfermeira.getInstance().getEnfermeiras().get(codigoEnfermeira);
+        String pressao = jTPressao.getText();
+        float temperatura = Float.parseFloat(jTPressao.getText());
+        String sintomas = jTSintomas.getText();
+        String alergias = jTAlergias.getText();
+        float peso = Float.parseFloat(jTAlergias.getText());
+        float altura = Float.parseFloat(jTAltura.getText());
+        float imc = Float.parseFloat(jTImc.getText());
+        Boolean febre = Boolean.parseBoolean(jTfebre.getText());
+        STriagem.getInstance().getTriagem().add(tri);
+        
+     
     }//GEN-LAST:event_jBSalvarActionPerformed
+
+    private void jTPacTriagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTPacTriagemActionPerformed
+
+    }//GEN-LAST:event_jTPacTriagemActionPerformed
 
     /**
      * @param args the command line arguments

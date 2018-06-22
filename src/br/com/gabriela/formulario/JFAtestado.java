@@ -6,7 +6,9 @@
 package br.com.gabriela.formulario;
 
 import br.com.gabriela.objeto.Atestado;
+import br.com.gabriela.objeto.Consulta;
 import br.com.gabriela.singleton.SAtestado;
+import br.com.gabriela.singleton.SConsulta;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -44,7 +46,7 @@ public class JFAtestado extends javax.swing.JFrame {
         jTDias = new javax.swing.JTextField();
         jBSalvarAtestado = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
@@ -83,9 +85,13 @@ public class JFAtestado extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBSalvarAtestado)
+                .addGap(36, 36, 36))
+            .addComponent(jSeparator1)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSeparator1)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLInicioAtestado)
@@ -97,17 +103,11 @@ public class JFAtestado extends javax.swing.JFrame {
                             .addComponent(jTDias, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTFimAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTInicioAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 158, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(187, 187, 187)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jBSalvarAtestado)
-                .addGap(36, 36, 36))
+                            .addComponent(jTInicioAtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(187, 187, 187)
+                        .addComponent(jLabel1)))
+                .addContainerGap(168, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -145,8 +145,10 @@ public class JFAtestado extends javax.swing.JFrame {
         Atestado atesta= null ;
          SimpleDateFormat adf = new SimpleDateFormat("dd/MM/yyyy");
          String dataInicioAtestado = jTInicioAtestado.getText();
+         SimpleDateFormat ad = new SimpleDateFormat("dd/MM/yyyy");
          String dataFimAtestado = jTFimAtestado.getText();
-         String consulta = jTConsulta.getText();
+         int codigoConsulta = Integer.parseInt(jTConsulta.getText());
+         Consulta consulta = SConsulta.getInstance().getConsultas().get(codigoConsulta);
          String quantidadDias = jTDias.getText();
          
          SAtestado.getInstance().getAtestados().add(atesta);

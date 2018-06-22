@@ -116,8 +116,8 @@ public class Triagem {
     }
    
    private float calcularImc(float peso, float altura){
-       float imc;
-       imc = (peso)/(altura*altura);
+       float im;
+       im = (peso)/(altura*altura);
        
        return imc;
    } 
